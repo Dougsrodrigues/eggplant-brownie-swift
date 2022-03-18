@@ -39,6 +39,12 @@ class RefeicoesTableViewController: UITableViewController {
     if let viewController = segue.destination as? ViewController {
       viewController.tableViewController = self
     }
+    
+    prepara(para: segue)
+  }
+  
+  func prepara(para segue: UIStoryboardSegue){
+    segue
   }
   
 }
